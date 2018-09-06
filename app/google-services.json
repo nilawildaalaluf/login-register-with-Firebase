@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1000105671301",
+    "firebase_url": "https://android-api-c607f.firebaseio.com",
+    "project_id": "android-api-c607f",
+    "storage_bucket": "android-api-c607f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000105671301:android:c83767c3675c2dc7",
+        "android_client_info": {
+          "package_name": "com.example.irobot.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000105671301-40fru7h8ugbk8fm05v7odnpfe7smc8bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSRdSUPDmK9HCR0mB92xfRl7GgSrOv_Zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
