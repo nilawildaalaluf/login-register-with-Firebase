@@ -45,7 +45,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     //Upload to database
                     String user_email = editEmailRegister.getText().toString().trim();
                     String user_Password = editPasswordRegister.getText().toString().trim();
-                    Log.d("email", user_email);
+//                    Log.d("e,ail",editEmailRegister);
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email, user_Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
