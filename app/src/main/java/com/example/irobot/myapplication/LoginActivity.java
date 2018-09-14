@@ -59,14 +59,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
     private void validate(String userName, String userPassword){
-//        if ((userName.equals("admin")) && (userPassword.equals("12345"))){
-//            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
-//            startActivity(i);
-//        }else {
-//            Toast.makeText(this, "Error login", Toast.LENGTH_LONG).show();
-//        }
-
-        firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        if ((userName.equals("")) && (userPassword.equals(""))){
+            Toast.makeText(this, "Error login", Toast.LENGTH_LONG).show();
+        }else {
+            firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
@@ -78,6 +74,9 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        }
+
+//
 
     }
 }
